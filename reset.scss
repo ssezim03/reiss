@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+body{
+  background: #EEEEEE;
+}
+a {
+    color: #011F3A;
+    text-decoration: none;
+  }
+
+  .log {
+    padding: 20px;
+    font-weight: 400;
+    font-size: 18px;
+    color: #011F3A;
+  }
+
+  .title {
+    width: 50%;
+    padding: 20px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    color: #777777;
+  }
+
+  .flip {
+    position: relative;
+    transform-style: preserve-3d;
+    transition: 1s;
+  }
+
+  .front, .back {
+    background: white;
+    border: 1px solid #3D5675;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    backface-visibility: hidden;
+    top: 0;
+    left: 0;
+  }
+
+  .front {
+    transform: rotateY(0);
+    z-index: 1;
+  }
+
+  .back {
+    transform: rotateY(180deg);
+  }
+
+  .flip-container:hover .flip {
+    transform: rotateY(180deg);
+  }
+
+  .flip-container, .front, .back {
+    width: 400px;
+    height: 350px;
+  }
+
+  .flip-container {
+    margin: 20px 20px;
+  }
+
+  .flip-img {
+    width: 100%;
+  }
+
+  figure {
+    text-align: center;
+  }
+
+
+
+  .inputBurger {
+    display: none;
+  }
+
+  .burgerLine {
+    position: absolute;
+    left: 95%;
+  }
+
+  .burgerIcon {
+    margin: 20px 0 0 0;
+    font-size: 20px;
+    color: orange;
+  }
+
+  .burgerClose {
+    top: 20px;
+    font-size: 25px;
+    color: orange;
+    position: absolute;
+    left: 95%;
+  }
+
+  .burgerBlock {
+    width: 100%;
+    min-height: 100vh;
+    background: rgba(4, 6, 42, 0.62);
+    position: absolute;
+    left: 0;
+    display: none;
+
+  }
+
+  .burger {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+  #burgerCheck:checked ~ .burgerBlock {
+
+    display: block;
+  }
+
+  #burgerCheck:checked ~ .burgerLine {
+    display: none;
+  }
+
+  .menuBurger {
+    font-size: 40px;
+    color: orange;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+  }
+
+  .menuBurger a {
+    font-size: 20px;
+    color: orange;
+    text-transform: uppercase;
+    margin: 40px 0 40px 0;
+  }
+
+  .menuBurger a:hover {
+    border-bottom: 3px solid #f36c0a;
+  }
+.burger{
+  display: none;
+}
