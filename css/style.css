@@ -152,6 +152,11 @@ figure {
   display: none;
 }
 
+@media (max-width: 1400px) {
+  #area .area--block__second--div__text {
+    padding: 0 120px;
+  }
+}
 @media (max-width: 1200px) {
   #header .header--block__menuss {
     font-size: 11px;
@@ -159,9 +164,29 @@ figure {
   #hero .hero--title {
     max-width: 75%;
   }
+  #hero .hero {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
   .flip-container, .front, .back {
-    width: 318px;
-    height: 300px;
+    width: 291px;
+    height: 242px;
+  }
+  .flip-container {
+    margin: 8px 3px;
+  }
+  .header-flip img {
+    width: 280px;
+  }
+  #header {
+    margin: 20px 30px;
+  }
+  #area .area--block__second--div__text {
+    padding: 0 100px;
+  }
+  #area .area--block__second--img img {
+    width: 185px;
   }
 }
 @media (max-width: 1140px) {
@@ -174,6 +199,9 @@ figure {
   .flip-container {
     margin: 20px 0 20px;
   }
+  #area .area--block__second--div__text {
+    padding: 0 112px;
+  }
 }
 @media (max-width: 1024px) {
   #hero {
@@ -182,6 +210,9 @@ figure {
   #header .header--block__menuss {
     font-size: 6px;
     max-width: 80%;
+  }
+  #area .area--block__second--div__text {
+    padding: 0 54px;
   }
 }
 @media (max-width: 992px) {
@@ -232,6 +263,43 @@ figure {
   }
   #header .header--block__menu {
     margin: 0 0 0 137px;
+  }
+  #order .order--block__text {
+    padding: 47px 0;
+  }
+  #order .order--block__img {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  #ark .ark--block__link {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  #order .order--block__text {
+    padding: 28px 0;
+  }
+  #like .like--line {
+    display: none;
+  }
+  #ark .ark--block h1 {
+    margin: 40px 0;
+    font-size: 20px;
+    text-align: center;
+  }
+  #like .like {
+    flex-direction: column;
+  }
+  #area .area--block__second--img img {
+    width: 49%;
+  }
+  #area .area--block__second {
+    flex-direction: column;
+    align-items: center;
+  }
+  #footer {
+    padding: 16px 0;
   }
 }
 #header {
@@ -400,7 +468,6 @@ figure {
 }
 
 #order .order--block {
-  height: 774px;
   background: #72BDA3;
 }
 #order .order--block__text {
@@ -484,7 +551,6 @@ figure {
 }
 
 #like .like {
-  height: 610px;
   background: #FFCA3A;
   box-shadow: 0 14px 44px rgba(143, 143, 143, 0.25);
   display: flex;
@@ -500,6 +566,7 @@ figure {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 100px 0;
 }
 #like .like--block h1 {
   font-family: "Roboto", sans-serif;
@@ -552,7 +619,6 @@ figure {
   padding: 50px 0;
 }
 #area .area--block {
-  height: 1306px;
   background: #FFFFFF;
 }
 #area .area--block__first {
@@ -573,9 +639,6 @@ figure {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-#area .area--block__second--div__text {
-  padding: 0 150px;
 }
 #area .area--block__second--div__text h4 {
   text-align: center;

@@ -190,7 +190,6 @@
 #order {
   .order {
     &--block {
-      height: 774px;
       background: #72BDA3;
 
       &__text {
@@ -260,7 +259,6 @@
 
 #like {
   .like {
-    height: 610px;
     background: #FFCA3A;
     box-shadow: 0 14px 44px rgba(143, 143, 143, 0.25);
     display: flex;
@@ -277,6 +275,7 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+      padding: 100px 0;
 
       h1 {
         @include text;
@@ -323,7 +322,7 @@
     }
 
     &--block {
-      height: 1306px;
+
       background: #FFFFFF;
 
       &__first {
@@ -346,7 +345,6 @@
           @include center;
 
           &__text {
-            padding: 0 150px;
 
             h4 {
               text-align: center;
